@@ -731,20 +731,15 @@ section {
   font-size: 50px;
 }
 
-/* Media query for smaller screens (e.g., mobile devices) */
+
+/* Responsive styles for tablets and smaller screens */
 @media (max-width: 768px) {
-  .block__62849 .block__16443 {
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
-
-  .block__62849 .block__16443:hover {
-    top: 0; /* Reset the top value on hover for smaller screens */
-  }
-
-  .custom-icon {
-    font-size: 30px; /* Decrease font size for smaller screens */
-  }
+    .col-6 {
+        width: 100% !important; /* Force each column to take up 100% width */
+        margin-bottom: 20px; /* Add some spacing between the blocks */
+    }
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials
