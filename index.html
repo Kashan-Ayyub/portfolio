@@ -521,7 +521,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formspree.io/f/mjvnvyzo" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/mjvnvyzo" method="post" role="form" class="email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -592,6 +592,22 @@
     resumeLink.click();
     document.body.removeChild(resumeLink);
   }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.php-email-form');
+
+    form.addEventListener('submit', function (event) {
+      const errorMessage = document.querySelector('.error-message');
+      errorMessage.style.display = 'none';
+
+      if (!form.checkValidity()) {
+        errorMessage.innerHTML = 'Please fill out all the required fields.';
+        errorMessage.style.display = 'block';
+        event.preventDefault();
+      }
+    });
+  });
 </script>
 </body>
 
