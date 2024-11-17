@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../../static/app/assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="../../static/app/assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="../../static/app/assets/css/all.min.css" rel="stylesheet">
+
+        <link href="../../static/app/assets/css/fontawesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../static/app/assets/css/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="../../static/app/assets/css/magnific-popup.css">
+
+        <link rel="stylesheet" href="../../static/app/assets/css/animate.min.css">
+
+        <link rel="stylesheet" href="../../static/app/assets/css/style.css">
+
+        <link href="../../static/app/assets/img/ieps%20logo%20concept.png" rel="icon">
+
+        <link href="../../static/app/assets/img/ieps%20logo%20concept.png" rel="apple-touch-icon">
+
+        <title>Kashan - 
+Alpha Penta
+</title>
+</head>
+
+<body>
+
+        <!-- <div class="preloader">
+                <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+        </div> -->
+
+        <!-- Header Start Here -->
+        <header class="header-area position_top">
+                <div class="site-logo">
+                        <div class="logo">
+                                <a href="../../index.html"><img src="../../static/app/assets/img/ieps%20logo%20concept.png"
+                                                alt="image"></a>
+                        </div>
+                </div>
+                <div class="main-menu">
+                        <nav class="main-nav">
+                                <div class="mobile-menu-logo">
+                                        <a href="../../index.html"><img src="../../static/app/assets/img/ieps%20logo%20concept.png"
+                                                        alt=""></a>
+                                        <div class="remove">
+                                                <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                </div>
+                                <ul>
+                                        <li class="has-child active">
+                                                <a href="../../index.html">Home</a>
+                                        </li>
+                                        <li class="about_option"><a href="#about">About</a></li>
+                                        <li>
+                                                <a href="../../services/index.html">Service</a>
+                                        </li>
+                                        <li>
+                                                <a href="../../projects/index.html">Project</a>
+                                        </li>
+                                        <li><a href="../../hireme/index.html">Hire Me</a></li>
+                                </ul>
+                                <div class="get-qoute d-flex justify-content-center d-lg-none d-block pt-50">
+                                        <div class="cmn-btn">
+                                                <div class="line-1"></div>
+                                                <div class="line-2"></div>
+                                                <a href="https://wa.me/+923121110944" target="_blank">Whatsapp</a>
+                                        </div>
+                                </div>
+                        </nav>
+                </div>
+                <div class="nav-right">
+                        <div class="get-qoute">
+                                <div class="cmn-btn">
+                                        <div class="line-1"></div>
+                                        <div class="line-2"></div>
+                                        <a href="https://wa.me/+923121110944" target="_blank">Whatsapp</a>
+                                </div>
+                        </div>
+                        <div class="mobile-menu">
+                                <a href="javascript:void(0)" class="cross-btn">
+                                        <span class="cross-top"></span>
+                                        <span class="cross-middle"></span>
+                                        <span class="cross-bottom"></span>
+                                </a>
+                        </div>
+                </div>
+        </header>
+
+        
+<style>
+  .gallery {
+    text-align: center;
+    /* margin: 20px; */
+    width: 100%;
+  }
+
+  .thumbnail {
+    width: 100%;
+    /* max-width: 300px; */
+    height: 100px;
+    /* border: 2px solid #ddd; */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 8px;
+    object-fit: cover;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+    z-index: 1000;
+  }
+
+  .lightbox-content {
+    /* position: relative; */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0px 23px;
+  }
+
+  .fullsize-image {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #191a1c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .lightbox-close:hover {
+    background: #f00;
+    color: white;
+  }
+
+  .lightbox-trigger {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width:990px) {
+    .fullsize-image{
+      width: 100%;
+      height:auto;
+    }
+    .row{
+      flex-direction: column-reverse !important;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+
+    .row{
+      flex-direction: column-reverse !important;
+    }
+    .project_main_image .main_image{
+      height: auto;
+    }
+  }
+</style>
+
+<body style="background-color: #000">
+
+  <div class="line_wrap layout2">
+    <div class="line_item"></div>
+    <div class="line_item"></div>
+    <div class="line_item"></div>
+    <div class="line_item"></div>
+    <div class="line_item"></div>
+  </div>
+
+  <!-- Header Start Here -->
+
+  <!-- Header End Here -->
+
+  <!-- <div class="gallery">
+    <a href="#lightbox" class="lightbox-trigger">
+        <img src="/static/app/assets/img/icons/feature-icon-1.png" alt="Thumbnail" class="thumbnail">
+    </a>
+</div>
+
+<div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+        <img src="/static/app/assets/img/icons/feature-icon-1.png" alt="Full-size" class="fullsize-image">
+        <a href="#" class="lightbox-close">×</a>
+    </div>
+</div> -->
+  <main class="creasoft-wrap">
+
+    <!-- Project Start Here -->
+    <section class="project-area sec-mar">
+      <section id="about" class="about-area sec-mar-bottom project_detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 or-2 wow animate fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms" style="
+                visibility: visible;
+                animation-duration: 1500ms;
+                animation-delay: 200ms;
+              ">
+              <div class="sec-title white layout2">
+                <div class="d-flex">
+                  <div class="project_detail_image">
+                    <img src="../../media/app/images/ap.png" alt="..." />
+                  </div>
+                  <div>
+                    <span>Alpha Penta</span>
+                    <p style="font-size: 12px">Developed by Kashan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about-left layout2 project">
+                
+                
+                <p class="project_link project_website">
+                  <i class="fas fa-solid fa-link"></i><a href="https://alphapenta.com.pk/" target="_blank">Visit Website</a>
+                </p>
+                
+              </div>
+            </div>
+            <div class="col-lg-9 or-1 wow animate fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms" style="
+                visibility: visible;
+                animation-duration: 1500ms;
+                animation-delay: 200ms;
+              ">
+              <div class="about-right layout2">
+                <div class="">
+                  <div class="d-flex justify-content-start flex-row align-items-start project_main_image gap-3">
+                    <div class="main_image">
+                      <img src="../../media/app/images/Screenshot_2024-09-03_104438.jpg" alt="" />
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="py-4">
+                    <div style="color: #fee300">
+                      <h2>Alpha Penta</h2>
+                      
+                      <p>I developed the official website for Alpha Penta Pvt Ltd, a company dedicated to empowering businesses in the food and beverage industry. The website highlights Alpha Penta's expertise across six key sectors: Meat, Poultry, and Fish; Environment, Hygiene, and Auxiliary Equipment; Fruits and Vegetables; Baking and Confectionery; Dairy, Beverages, and Sauces; and Packaging.</p>
+<p>&nbsp;</p>
+<p>The site is designed with a focus on user experience, providing clear and accessible information about the company&rsquo;s tailored services. The layout is responsive and optimized for all devices, ensuring seamless navigation for users.</p>
+<p>&nbsp;</p>
+<p>To reflect Alpha Penta's commitment to quality and sustainability, I implemented features that emphasize their innovative approach to meeting the ever-evolving demands of the market. The website serves as a trusted resource for businesses seeking to enhance efficiency and drive growth in a competitive landscape.</p>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Project End Here-->
+  </main>
+  <!-- Footer Start Here -->
+
+  <!-- Footer Start Here -->
+
+
+</body>
+
+<script>
+  var header = document.querySelector('.header-area')
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', function(event) {
+            event.preventDefault();
+            const imageId = this.getAttribute('data-image-id');
+            const lightbox = document.getElementById(`lightbox-${imageId}`);
+            if (lightbox) {
+                lightbox.style.display = 'flex';
+                header.style.zIndex = '0';
+                header.style.opacity = '0';
+                document.body.style.overflow = 'hidden'; // Disable body scrolling
+                setTimeout(() => lightbox.style.opacity = '1', 10);
+            }
+        });
+    });
+
+    document.querySelectorAll('.lightbox-close').forEach(close => {
+        close.addEventListener('click', function(event) {
+            event.preventDefault();
+            const lightbox = this.closest('.lightbox');
+            if (lightbox) {
+                lightbox.style.opacity = '0';
+                header.style.zIndex = '2';
+                header.style.opacity = '1';
+                document.body.style.overflow = ''; // Re-enable body scrolling
+                setTimeout(() => lightbox.style.display = 'none', 300);
+            }
+        });
+    });
+
+    document.querySelectorAll('.lightbox').forEach(lightbox => {
+        lightbox.addEventListener('click', function(event) {
+            if (event.target === lightbox) {
+                lightbox.style.opacity = '0';
+                document.body.style.overflow = ''; // Re-enable body scrolling
+                setTimeout(() => lightbox.style.display = 'none', 300);
+            }
+        });
+    });
+});
+</script>
+
+
+
+        <footer>
+                <div class="container">
+                        <div class="footer-top">
+                                <div class="row justify-content-around">
+                                        <div class="col-md-4 col-lg-4 col-xl-4">
+                                                <div class="footer-widget">
+                                                        <div class="footer-logo">
+                                                                <a href="../../index.html"><img
+                                                                                src="../../static/app/assets/img/ieps%20logo%20concept.png"
+                                                                                alt=""></a>
+                                                        </div>
+                                                        <p>With over two years of experience, I specialize in developing web projects using HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, Ionic, Angular, and MySQL.</p>
+                                                        
+                                                </div>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-lg-2 col-xl-2">
+                                                <div class="footer-widget">
+                                                        <h4>Quick Links</h4>
+                                                        <div class="number">
+                                                                <div class="num-icon">
+                                                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="phone ">
+                                                                        <a href="../../index.html">Home</a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="number about_option_footer">
+                                                                <div class="num-icon">
+                                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="phone ">
+                                                                        <a href="#about">About</a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="office-mail">
+                                                                <div class="mail-icon">
+                                                                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="email">
+                                                                        <a href="../../services/index.html">Services</a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="office-mail">
+                                                                <div class="mail-icon">
+                                                                        <i class="fas fa-project-diagram"></i>
+                                                                </div>
+                                                                <div class="email">
+                                                                        <a href="../../projects/index.html">Projects</a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="office-mail">
+                                                                <div class="mail-icon">
+                                                                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="email">
+                                                                        <a href="../../hireme/index.html">Hire Me</a>
+                                                                </div>
+                                                        </div>
+                                                        <!-- <div class="address">
+                                                                <div class="address-icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                </div>
+                                                                <p>Office No. 106, MashAllah Apartment, North
+                                                                        Nazimabad, Karachi.</p>
+                                                        </div> -->
+                                                </div>
+                                        </div>
+
+
+                                        <div class="col-md-3 col-lg-3 col-xl-3">
+                                                <div class="footer-widget">
+                                                        <h4>Contact Me</h4>
+                                                        <div class="number">
+                                                                <div class="num-icon">
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                </div>
+                                                                <div class="phone">
+                                                                        <a href="tel:+923121110944">+92 312 1110944</a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="office-mail">
+                                                                <div class="mail-icon">
+                                                                        <i class="far fa-envelope"></i>
+                                                                </div>
+                                                                <div class="email">
+                                                                        <a href="mailto:kashanayyub21@gmail.com"><span
+                                                                                        style="font-size: 17px;"
+                                                                                        class="__cf_email__">kashanayyub21@gmail.com</span></a>
+                                                                </div>
+                                                        </div>
+
+                                                        <ul class="social-media-icons">
+                                                                <li><a href="https://www.facebook.com/kashan.ayyub/"
+                                                                                target="_blank"><i
+                                                                                        class="fab fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="https://www.instagram.com/kashanayyub21/"
+                                                                                target="_blank"><i
+                                                                                        class="fab fa-instagram"></i></a>
+                                                                </li>
+                                                                <li><a href="https://pk.linkedin.com/in/kashan-ayyub-b0a439277"
+                                                                                target="_blank"><i
+                                                                                        class="fab fa-linkedin-in"></i></a>
+                                                                </li>
+                                                        </ul>
+                                                        <!-- <div class="address">
+                                                            <div class="address-icon">
+                                                                    <i class="fas fa-map-marker-alt"></i>
+                                                            </div>
+                                                            <p>209 A, Axis 2
+                                                            Silicon oasis, Dubai, United Arab Emirates.</p>
+                                                    </div> -->
+                                                </div>
+                                        </div>
+
+
+                                        <!-- <div class="col-md-3 col-lg-3 col-xl-3">
+                                            <div class="footer-widget">
+                                                    <h4>U.S.A</h4>
+                                                    <div class="number">
+                                                            <div class="num-icon">
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                            </div>
+                                                            <div class="phone">
+                                                                    <a
+                                                                            href="tel:0313-1093779">0313-1093779</a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="office-mail">
+                                                            <div class="mail-icon">
+                                                                    <i class="far fa-envelope"></i>
+                                                            </div>
+                                                            <div class="email">
+                                                                    <a
+                                                                            href="tell:everythingpossiblesolution@gmail.com"><span
+                                                                                    style="font-size: 11px;"
+                                                                                    class="__cf_email__"
+                                                                                    data-cfemail="7e171018113e1b061f130e121b501d1113">everythingpossiblesolution@gmail.com</span></a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="address">
+                                                            <div class="address-icon">
+                                                                    <i class="fas fa-map-marker-alt"></i>
+                                                            </div>
+                                                            <p>Office No. 106, MashAllah Apartment, North
+                                                                    Nazimabad, Karachi.</p>
+                                                    </div>
+                                            </div>
+                                    </div> -->
+                                </div>
+                        </div>
+                        <div class="footer-bottom">
+                                <div class="row align-items-center">
+                                        <div class="col-12 col-md-4 col-lg-4 col-xl-5">
+                                                <div class="copy-txt">
+                                                        <span>Copyright 2024 <b>KASHAN</b> | Design By <a
+                                                                        href="#">Kashan</a></span>
+                                                </div>
+                                        </div>
+                                        <div class="col-12 col-md-8 col-lg-8 col-xl-7">
+                                                <ul class="footer-bottom-menu">
+                                                        <li><a href="#">Privacy Policy</a></li>
+                                                        <li><a href="#">Terms of Use</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+        <!-- Footer End Here -->
+        </main>
+
+
+        <div class="cursor"></div>
+
+
+        <script data-cfasync="false"
+                src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+        <script src="../../static/app/assets/js/jquery-3.6.0.min.js"></script>
+
+        <script src="../../static/app/assets/js/popper.min.js"></script>
+        <script src="../../static/app/assets/js/bootstrap.min.js"></script>
+
+        <script src="../../static/app/assets/js/swiper-bundle.min.js"></script>
+
+        <script src="../../static/app/assets/js/waypoints.min.js"></script>
+
+        <script src="../../static/app/assets/js/jquery.counterup.min.js"></script>
+
+        <script src="../../static/app/assets/js/isotope.pkgd.min.js"></script>
+
+        <script src="../../static/app/assets/js/jquery.magnific-popup.min.js"></script>
+
+        <script src="../../static/app/assets/js/wow.min.js"></script>
+
+        <script src="../../static/app/assets/js/particles.min.js"></script>
+        <script src="../../static/app/assets/js/app.js"></script>
+
+        <script src="../../static/app/assets/js/custom.js"></script>
+</body>
+
+
+<!-- Mirrored from kashanportfolio.pythonanywhere.com/project_detail/11/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Nov 2024 13:38:43 GMT -->
+</html>
