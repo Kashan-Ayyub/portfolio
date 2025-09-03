@@ -201,7 +201,7 @@
                                                         <div class="contact-form wow animate fadeInUp"
                                                                 data-wow-delay="200ms" data-wow-duration="1500ms">
                                                                 <h3>Interested in Working Together?</h3>
-                                                                <form method="post" id="main_form" action="mail.php">
+                                                                <form id="main_form">
                                                                         <div class="row">
                                                                                 <div class="col-12">
                                                                                         <input type="text" name="name" required
@@ -250,41 +250,38 @@
 
         </main>
 
-        <script>
+        <!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("YOUR_PUBLIC_KEY"); // 👈 apna PUBLIC_KEY yahan daalo
+  })();
+
+  document.getElementById("main_form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        window.location.href = "index.html"; // Redirect after success
+      }, (error) => {
+        alert("Failed to send message: " + JSON.stringify(error));
+      });
+  });
+</script>
 
 
-                document.getElementById('main_form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    let formData = new FormData(this);
-
-    fetch(this.action, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert(data); // success/fail message
-        if (data.includes("success")) {
-            window.location.href = '../index.html';
-        }
-    })
-    .catch(error => console.error('Error:', error));
-});
-
-
-//                document.getElementById('main_form').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Prevent form from submitting immediately
-//     localStorage.setItem('formSubmitted', 'true'); // Set flag in local storage
-//     this.submit()
-//     setTimeout(function() {
-//         window.location.href = '../index.html'; // Redirect to the home page
-//     }, 100); // Adjust the delay if needed
-// });
+<!--                 document.getElementById('main_form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting immediately
+    localStorage.setItem('formSubmitted', 'true'); // Set flag in local storage
+    this.submit()
+    setTimeout(function() {
+        window.location.href = '../index.html'; // Redirect to the home page
+     }, 100); // Adjust the delay if needed
+ }); -->
 
 
 
-              </script>
 
 
 </body>
