@@ -249,18 +249,17 @@
 
 
         </main>
-
- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   // Initialize EmailJS
   (function(){
-     emailjs.init("UrLRp-CKdO0HuajMp"); // yahan apna PUBLIC KEY lagana
+     emailjs.init("UrLRp-CKdO0HuajMp"); // ✅ yahan sirf PUBLIC KEY
   })();
 
   document.getElementById("main_form").addEventListener("submit", function(event){
       event.preventDefault();
 
-      emailjs.sendForm("service_6iwwcg9", "UrLRp-CKdO0HuajMp", this)
+      emailjs.sendForm("service_6iwwcg9", "template_xxxxxx", this) // ✅ yahan TEMPLATE ID dalna
         .then(function() {
             alert("✅ Your message has been sent successfully!");
             window.location.href = "../index.html"; // Redirect to homepage
@@ -270,6 +269,7 @@
         });
   });
 </script>
+
 
 
 <!--                 document.getElementById('main_form').addEventListener('submit', function(event) {
