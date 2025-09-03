@@ -250,23 +250,24 @@
 
         </main>
 
-        <!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
-  (function() {
-    emailjs.init("UrLRp-CKdO0HuajMp"); // 👈 apna PUBLIC_KEY yahan daalo
+  // Initialize EmailJS
+  (function(){
+     emailjs.init("UrLRp-CKdO0HuajMp"); // yahan apna PUBLIC KEY lagana
   })();
 
-  document.getElementById("main_form").addEventListener("submit", function(e) {
-    e.preventDefault();
+  document.getElementById("main_form").addEventListener("submit", function(event){
+      event.preventDefault();
 
-    emailjs.sendForm("service_6iwwcg9", "template_yp7ub4q", this)
-      .then(() => {
-        alert("Message sent successfully!");
-        window.location.href = "index.html"; // Redirect after success
-      }, (error) => {
-        alert("Failed to send message: " + JSON.stringify(error));
-      });
+      emailjs.sendForm("service_6iwwcg9", "UrLRp-CKdO0HuajMp", this)
+        .then(function() {
+            alert("✅ Your message has been sent successfully!");
+            window.location.href = "../index.html"; // Redirect to homepage
+        }, function(error) {
+            alert("❌ Failed to send message. Please try again.");
+            console.log("Error:", error);
+        });
   });
 </script>
 
